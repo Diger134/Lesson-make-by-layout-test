@@ -236,9 +236,8 @@ button {
 }
 
 .feature-product-content {
-    width: 1171px;
-    height: 369px;
-    margin: 120px auto;
+    min-height: 369px;
+    margin: 120px 97px;
 }
 
 .feature-product-text {
@@ -267,7 +266,8 @@ button {
 
 .tab-menu-link-active {
     color: #000;
-    box-shadow: inset 0px -3px;
+    padding-bottom: 17px;
+    border-bottom: 3px solid #000;
 }
 
 .tab-content {
@@ -341,11 +341,13 @@ button {
 .promo-product-wrapper {
     min-height: 683px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .promo-product-content {
-    width: 683px;
+    width: 50%;
     height: 683px;
+    min-width: 520px;
 
 }
 
@@ -395,8 +397,8 @@ button {
 }
 
 .trending-products-content {
-    margin: 119px auto;
-    width: 1171px;
+   margin: 119px 64px;
+   max-width: 1171px;
 }
 
 .trending-products-text {
@@ -433,8 +435,8 @@ button {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 120px auto 90px;
-    width: 1170px;
+    margin: 120px 85px 90px;
+    max-width: 1170px;
 }
 
 .exclusive-product-inside-content1 {
@@ -740,5 +742,11 @@ footer {
 
     .terms-and-conditions-link {
         margin-bottom: 20px;
+    }
+    .promo-product-wrapper {
+        min-height: 683px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
